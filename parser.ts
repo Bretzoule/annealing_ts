@@ -1,5 +1,4 @@
 import fs from 'fs';
-const maxValue: number = 9999;
 
 export default class Parser {
     matrix: number[][];
@@ -14,7 +13,8 @@ export default class Parser {
         let mymatrix: number[];
         dataFile = dataFile.split('\n').slice(7, dataFile.split('\n').length - 2).join('\n');
         mymatrix = dataFile.split(" ").filter(item => item).map(x => parseInt(x))
-        let j: number = mymatrix.reduce((n, x) => (n + ((x >= maxValue) ? 1 : 0)), 0);
+        let j: number = mymatrix.reduce((n, x) => (n + ((x == mymatrix[0]) ? 1 : 0)), 0);
         while(mymatrix.length) this.matrix.push(mymatrix.splice(0,j));
+        console.log(this.matrix);
     }
 }
