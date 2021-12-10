@@ -4,7 +4,7 @@
   "description": "Implementation du recuit simulé en TS",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "node ."
   },
   "author": "",
   "license": "ISC",
