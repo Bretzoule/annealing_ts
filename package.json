@@ -4,9 +4,9 @@
   "description": "Implementation du recuit simulé en TS",
   "main": "dist/index.js",
   "scripts": {
-    "run": "node ."
+    "run": "npx tsc && node ."
   },
-  "author": "",
+  "author": "Bretzoule<leflochtho@eisti.eu>",
   "license": "ISC",
   "dependencies": {
     "fs": "^0.0.1-security",
